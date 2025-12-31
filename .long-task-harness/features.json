@@ -55,6 +55,34 @@
       "description": "Create public GitHub repo tmustier/python-typing",
       "status": "passed",
       "test": "Repo exists and is public"
+    },
+    {
+      "id": "F009",
+      "name": "test-fixtures",
+      "description": "Create test fixtures: untyped, partial, third_party Python projects",
+      "status": "passed",
+      "test": "Each fixture has expected pyright error count"
+    },
+    {
+      "id": "F010",
+      "name": "test-init",
+      "description": "Create test_init.py - tests init_typing.py creates correct files",
+      "status": "passed",
+      "test": "pytest tests/test_init.py passes"
+    },
+    {
+      "id": "F011",
+      "name": "test-analyze",
+      "description": "Create test_analyze.py - tests analyze_typing.py parses output correctly",
+      "status": "passed",
+      "test": "pytest tests/test_analyze.py passes"
+    },
+    {
+      "id": "F012",
+      "name": "test-config",
+      "description": "Create pytest config and CI workflow",
+      "status": "passed",
+      "test": "pytest runs successfully"
     }
   ]
 }

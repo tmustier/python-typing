@@ -9,14 +9,17 @@ Outputs:
 - Suggested starting point
 """
 
+from __future__ import annotations
+
 import json
 import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
+from typing import Optional
 
 
-def run_pyright() -> dict | None:
+def run_pyright() -> Optional[dict]:
     """Run pyright and return JSON output."""
     try:
         result = subprocess.run(
@@ -54,7 +57,7 @@ def analyze_errors(data: dict) -> None:
     files: Counter[str] = Counter()
     
     for diag in diagnostics:
-        if diag.get("severity") == 1:  # Error
+        if diag.get("severity") == "error":  # Error
             rule = diag.get("rule", "unknown")
             rules[rule] += 1
             

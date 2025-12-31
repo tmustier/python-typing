@@ -11,6 +11,8 @@ Creates:
 - Installs ralph-wiggum plugin (optional, Claude Code only)
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os
@@ -18,6 +20,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from typing import Optional
 
 
 def get_script_dir() -> Path:
@@ -32,7 +35,7 @@ def get_project_dir() -> Path:
     return Path.cwd()
 
 
-def run_pyright(config: str | None = None) -> int:
+def run_pyright(config: Optional[str] = None) -> int:
     """Run pyright and return error count."""
     cmd = ["npx", "pyright", "--outputjson"]
     if config:

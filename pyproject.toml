@@ -1,0 +1,15 @@
+[project]
+name = "python-typing"
+version = "0.1.0"
+description = "Agent skill for Python type checking migration"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v"
+
+[tool.pyright]
+include = ["scripts"]
+typeCheckingMode = "standard"
