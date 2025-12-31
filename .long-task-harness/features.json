@@ -1,0 +1,60 @@
+{
+  "features": [
+    {
+      "id": "F001",
+      "name": "skill-md",
+      "description": "Create SKILL.md with frontmatter, onboarding flow, and core instructions",
+      "status": "passed",
+      "test": "SKILL.md exists with valid frontmatter"
+    },
+    {
+      "id": "F002",
+      "name": "init-script",
+      "description": "Create scripts/init_typing.py to initialize typing setup in a project",
+      "status": "passed",
+      "test": "Script runs successfully and creates expected files"
+    },
+    {
+      "id": "F003",
+      "name": "analyze-script",
+      "description": "Create scripts/analyze_typing.py to analyze error distribution",
+      "status": "passed",
+      "test": "Script runs and outputs error breakdown"
+    },
+    {
+      "id": "F004",
+      "name": "rule-assets",
+      "description": "Create assets/rules/ with 4 typing discipline rules",
+      "status": "passed",
+      "test": "All 4 rule files exist with valid format"
+    },
+    {
+      "id": "F005",
+      "name": "patterns-reference",
+      "description": "Create references/patterns.md with common fix patterns",
+      "status": "passed",
+      "test": "File covers all 6 layers from spec"
+    },
+    {
+      "id": "F006",
+      "name": "faq-reference",
+      "description": "Create references/faq.md with expanded FAQ",
+      "status": "passed",
+      "test": "All FAQ questions from spec are covered"
+    },
+    {
+      "id": "F007",
+      "name": "readme",
+      "description": "Create README.md for human users",
+      "status": "passed",
+      "test": "README covers installation, usage, and examples"
+    },
+    {
+      "id": "F008",
+      "name": "github-repo",
+      "description": "Create public GitHub repo tmustier/python-typing",
+      "status": "pending",
+      "test": "Repo exists and is public"
+    }
+  ]
+}
