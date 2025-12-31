@@ -92,6 +92,31 @@ Add end-to-end tests for the skill
 4. ~~Add pytest config~~ ✓
 5. ~~Create GitHub release v0.1.0~~ ✓ https://github.com/tmustier/python-typing/releases/tag/v0.1.0
 
-**Session complete - all features implemented and released.**
+---
+
+### Session 3 | 2025-12-31 | Commits: 46bc087..cf867ba
+
+#### Goal
+Add strict typing to all scripts and tests (dogfooding)
+
+#### Accomplished
+- [x] Ran analyze_typing.py on the skill itself (62 errors initially)
+- [x] Added strict type annotations to scripts/analyze_typing.py
+- [x] Added strict type annotations to scripts/init_typing.py
+- [x] Added strict type annotations to tests/conftest.py
+- [x] Added strict type annotations to tests/test_analyze.py
+- [x] Added strict type annotations to tests/test_init.py
+- [x] Configured pyright venv discovery in pyproject.toml
+- [x] All 18 tests still passing
+- [x] 0 pyright strict errors
+
+#### Decisions
+- **[D11]** Configure pyright venvPath/venv for pytest type discovery
+- **[D12]** Use `CompletedProcess[str]` for subprocess return types
+
+#### Releases
+- v0.1.1 - https://github.com/tmustier/python-typing/releases/tag/v0.1.1
+
+**Project complete - skill dogfoods itself with 0 type errors.**
 
 ---
