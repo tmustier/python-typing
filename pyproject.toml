@@ -2,7 +2,10 @@
 name = "python-typing"
 version = "0.1.0"
 description = "Agent skill for Python type checking migration"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
+dependencies = [
+    "pytest>=7.0.0",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -11,5 +14,8 @@ python_functions = ["test_*"]
 addopts = "-v"
 
 [tool.pyright]
-include = ["scripts"]
-typeCheckingMode = "standard"
+include = ["scripts", "tests"]
+exclude = ["tests/fixtures"]
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
