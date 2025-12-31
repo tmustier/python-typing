@@ -40,7 +40,7 @@ Create python-typing skill from spec
 - [x] Create faq.md (F006)
 - [x] Create README.md (F007)
 - [x] Added LICENSE (MIT)
-- [ ] Create GitHub repo (F008)
+- [x] Create GitHub repo (F008) - https://github.com/tmustier/python-typing
 
 #### Decisions
 - **[D1]** Python/pyright only, extensible structure for future TS
